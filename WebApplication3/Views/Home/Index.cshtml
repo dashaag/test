@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<table>
+    <tr>
+        <td>Name</td>
+        <td>Age</td>
+        <td>Group</td>
+        <td>Course</td>
+        <td>Stars</td>
+    </tr>
+    @foreach (var st in ViewBag.Students)
+    {
+        <tr>
+            <td>@st.Name</td>
+            <td>@st.Age</td>
+            <td>@st.Group</td>
+            <td>@st.Course</td>
+            <td>@st.Stars</td>
+        </tr>
+    }
+    <a href="/Home/Add">Add</a>
+</table>
